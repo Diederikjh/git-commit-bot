@@ -64,8 +64,6 @@ var doGithubStuff = async (resolve, reject) => {
     t.post('statuses/update', { status: commitData.commitMessage + " " + commitData.url }, function(err, data, twitterResponse) {
         console.log(data)
         console.log(err)
-      
-        //response.send({random_word:searchWord, commit_message:commitData.commitMessage, commit_url:commitData.url });
 	reject(Error(err))
     });
   }).catch(function(err){
