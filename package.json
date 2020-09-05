@@ -1,0 +1,28 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "git-commit-bot",
+  "version": "0.0.2",
+  "description": "Tweet random git commits!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "locally": "node -e \"console.log(require('./index').handler({}));\""
+  },
+  "dependencies": {
+    "github-api": "3.3.0",
+    "twit": "^2.2.11",
+    "random-word": "2.0.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/Diederikjh/git-commit-bot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node"
+  ]
+}
