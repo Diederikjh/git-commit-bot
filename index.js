@@ -66,6 +66,7 @@ var doGithubStuff = async (resolve, reject) => {
         console.log(err)
 	reject(Error(err))
     });
+    resolve("Status updated");
   }).catch(function(err){
     console.log(err);
     reject(Error(err));
